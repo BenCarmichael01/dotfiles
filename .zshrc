@@ -21,7 +21,7 @@ export VISUAL=/usr/bin/nvim
 export EDITOR="$VISUAL"
 export PATH=$PATH:$HOME/.local/bin
 
-alias gitdots="/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME"
+alias gdot="/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME"
 
 alias hconf="nvim ~/.config/hypr/hyprland.conf"
 alias wconf="nvim ~/.config/waybar/config"
