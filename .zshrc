@@ -21,9 +21,12 @@ export VISUAL=/usr/bin/nvim
 export EDITOR="$VISUAL"
 export PATH=$PATH:$HOME/.local/bin
 
-alias gdot="/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME"
+alias gdots="/usr/bin/git --git-dir=$HOME/.dots/ --work-tree=$HOME"
 
 alias hconf="nvim ~/.config/hypr/hyprland.conf"
 alias wconf="nvim ~/.config/waybar/config"
 alias wstyle="nvim ~/.config/waybar/style.css"
-alias ranger="toolbox run ranger"
+
+__git_files () { 
+    _wanted files expl 'local files' _files     
+}
